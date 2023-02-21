@@ -11,3 +11,6 @@ class TestLogin:
 
     def test_py(self):
         print("test123")
+
+    def test_jial(self):
+        print("在家里面提交一下代码")
