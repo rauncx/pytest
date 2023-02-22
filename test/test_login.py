@@ -3,6 +3,7 @@ import pytest
 
 class TestLogin:
 
+    @pytest.mark.smoke
     def test_login(self):
         print("测试登录")
 
