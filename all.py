@@ -1,7 +1,10 @@
+import os
+
 import pytest
 
 if __name__ == '__main__':
-    pytest.main(['-vs'])
+    pytest.main()
+    os.system('allure generate ./temp -o ./report --clean')
     # # 指定目录
     # pytest.main(['-vs', './testjk'])
     # # 指定用例
