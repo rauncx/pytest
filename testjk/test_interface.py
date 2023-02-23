@@ -9,7 +9,12 @@ class TestInterface:
         print('testjk')
 
     @pytest.mark.smoke
+
     def test_login_api(self):
         print('测试登录的接口')
+
+    def test_loginjk(self):
+        print("测试登录接口,在公司修改了")
+
 
 
