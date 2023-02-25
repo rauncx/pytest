@@ -1,0 +1,13 @@
+-
+  name: 获得token的接口  # 接口名称
+  request:  # 请求
+    url: https://api.weixin.qq.com/cgi-bin/token  # 请求的路径
+    method : get  # 请求的方法
+    headers:      # 请求头
+      Content-Type: application/json
+    params:       # 请求参数
+      grant_type: client_credential
+      appid: wx6b11b3efd1cdc290
+      secret: 106a9c6157c4db5f6029918738f9529d
+  validate: # 断言
+    - eq: {expires_in: 7200}

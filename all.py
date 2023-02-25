@@ -4,7 +4,8 @@ import pytest
 
 if __name__ == '__main__':
     pytest.main()
-    os.system('allure generate ./temp -o ./report --clean')
+    # 将allure测试报告的临时文件转为json格式
+    # os.system('allure generate ./temp -o ./report --clean')
     # # 指定目录
     # pytest.main(['-vs', './testjk'])
     # # 指定用例
